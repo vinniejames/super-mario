@@ -66,31 +66,37 @@ touch Brewfile
 ```shell
 tap 'caskroom/cask'
 
+brew 'ack'
 brew 'git'
+brew 'mongodb'
+brew 'mysql'
 brew 'node'
 brew 'npm'
+brew 'vim'
 
 cask 'atom'
+cask 'coda'
 cask 'dropbox'
 cask 'flux'
 cask 'firefox'
 cask 'gimp'
+cask 'google-chrome'
+cask 'google-chrome-canary'
 cask 'imageoptim'
 cask 'imagealpha'
 cask 'iterm2'
-cask 'google-chrome'
-cask 'google-chrome-canary'
 cask 'opera'
 cask 'postman'
 cask 'robomongo'
 cask 'sequel-pro'
+cask 'slack'
 cask 'torbrowser'
 cask 'transmission'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'vlc'
 
-mas 'Slack', id: 803453959
+# mas 'Slack', id: 803453959
 ```
 
 ## GitHub
@@ -147,7 +153,7 @@ alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 ```
 
 ```shell
-source ~/.bash_profile
+source ~/.zshrc
 ```
 
 ## Node Package Manager
@@ -155,5 +161,13 @@ source ~/.bash_profile
 ### Gulp
 
 ```shell
-npm install --global gulp-cli
+npm install yarn
+yarn global add babel-cli
+yarn global add bower
+yarn global add create-react-app
+yarn global add gulp-cli
+yarn global add nodemon
+yarn global add react
+yarn global add webpack
+yarn global add yo
 ```
