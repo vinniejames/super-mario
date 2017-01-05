@@ -72,6 +72,7 @@ brew 'mongodb'
 brew 'mysql'
 brew 'node'
 brew 'npm'
+brew 'wget'
 brew 'vim'
 
 cask 'atom'
