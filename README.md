@@ -172,3 +172,24 @@ yarn global add react
 yarn global add webpack
 yarn global add yo
 ```
+
+# VSCode Config
+
+```
+{
+    "window.zoomLevel": 1,
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/vendor": true,
+    },
+    "terminal.integrated.fontSize": 14,
+    "workbench.colorTheme": "Abyss",
+    "explorer.confirmDelete": false,
+    "terminal.integrated.fontFamily": "Monaco",
+    "editor.renderWhitespace": "boundary",
+    "typescript.experimental.syntaxFolding": true,
+}
+```
