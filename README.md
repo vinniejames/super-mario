@@ -17,53 +17,53 @@ Super new Mac setup scripts
 
 ### Show Library folder
 
-```shell
+```$
 chflags nohidden ~/Library
 ```
 
 ### Show hidden files
 
-```shell
+```$
 defaults write com.apple.finder AppleShowAllFiles YES
 ```
 
 ### Show path bar
 
-```shell
+```V
 defaults write com.apple.finder ShowPathbar -bool true
 ```
 
 ### Show status bar
 
-```shell
+```$
 defaults write com.apple.finder ShowStatusBar -bool true
 ```
 
 ## Homebrew
 
-```shell
+```$
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 ### Mac App Store
 
-```shell
+```$
 brew install mas
 ```
 
 #### Sign in
 
-```shell
+```$
 mas signin email@email.com
 ```
 
 ### Brewfile
 
-```shell
+```$
 touch Brewfile
 ```
 
-```shell
+```$
 tap 'caskroom/cask'
 
 brew 'ack'
@@ -100,12 +100,16 @@ cask 'vlc'
 # mas 'Slack', id: 803453959
 ```
 
+#### Execute Brewfile
+
+`$ brew bundle install`
+
 ## GitHub
 
 ### Config - `~/.gitconfig`
 
 
-```shell
+```$
 [user]
 	name = First Last
 	email = email@email.com
@@ -130,7 +134,7 @@ cask 'vlc'
 
 ### Config - `~./ssh/config`
 
-```shell
+```$
 Host example
     HostName example.com
     User example-user
@@ -139,7 +143,7 @@ Host example
 
 ### Generate SSH key
 
-```shell
+```$
 ssh-keygen -t rsa -b 4096 -C "email@email.com"
 ```
 
@@ -149,11 +153,11 @@ ssh-keygen -t rsa -b 4096 -C "email@email.com"
 
 ### Config - `~/.zshrc`
 
-```shell
+```$
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 ```
 
-```shell
+```$
 source ~/.zshrc
 ```
 
@@ -161,7 +165,7 @@ source ~/.zshrc
 
 ### Gulp
 
-```shell
+```$
 npm install yarn
 yarn global add babel-cli
 yarn global add bower
