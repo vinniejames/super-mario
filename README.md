@@ -9,6 +9,7 @@ Super new Mac setup scripts
 
 ## Preferences
 
+- **Keyboard >** Key Repeat = Fast; Delay Until Repeat = Short;
 - **Keyboard > Text >** Disable "Correct spelling automatically".
 - **Security and Privacy > Firewall >** On
 - **Security and Privacy > General >** App Store and identified developers
