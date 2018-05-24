@@ -197,5 +197,6 @@ yarn global add yo
     "terminal.integrated.fontFamily": "Monaco",
     "editor.renderWhitespace": "boundary",
     "typescript.experimental.syntaxFolding": true,
+    "python.linting.pep8Enabled": true,
 }
 ```
