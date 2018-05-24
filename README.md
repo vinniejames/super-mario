@@ -1,7 +1,7 @@
 # super-mario
 Super new Mac setup scripts
 
-# macOS Sierra v. 10.12 Setup 
+# macOS Setup 
 
 *12/29/16*
 
@@ -98,7 +98,7 @@ cask 'vagrant'
 cask 'virtualbox'
 cask 'vlc'
 
-# mas 'Slack', id: 803453959
+mas 'Xcode', id: 497799835
 ```
 
 #### Execute Brewfile
