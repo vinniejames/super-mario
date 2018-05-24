@@ -155,6 +155,7 @@ ssh-keygen -t rsa -b 4096 -C "email@email.com"
 ### Config - `~/.zshrc`
 
 ```$
+source $HOME/.profile
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 ```
 
