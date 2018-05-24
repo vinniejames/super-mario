@@ -9,6 +9,7 @@ Super new Mac setup scripts
 
 ## Preferences
 
+- **Siri >** Disable
 - **Keyboard >** Key Repeat = Fast; Delay Until Repeat = Short;
 - **Keyboard > Text >** Disable "Correct spelling automatically".
 - **Security and Privacy > Firewall >** On
