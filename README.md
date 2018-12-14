@@ -106,7 +106,7 @@ mas 'Xcode', id: 497799835
 
 `$ brew bundle install`
 
-## GitHub
+## [GitHub](https://github.com/GitAlias/gitalias)
 
 ### Config - `~/.gitconfig`
 
@@ -115,10 +115,14 @@ mas 'Xcode', id: 497799835
 [user]
 	name = First Last
 	email = email@email.com
+	
 [github]
 	user = username
+	
 [alias]
 	a = add
+	b = branch        
+	c = commit    
 	ca = commit -a
 	cam = commit -am
 	s = status
@@ -127,19 +131,33 @@ mas 'Xcode', id: 497799835
 	puom = pull origin master
 	puog = pull origin gh-pages
 	cob = checkout -b
+	branch-name = rev-parse --abbrev-ref HEAD
+        up = !git fetch origin && git pull
+        kill = "!f(){ git branch -d $@; git push origin --delete $@; }; f"
+        co = checkout
+	l = log --graph --oneline
+        log-graph = log --graph --all  --decorate --oneline        
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit        lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+        lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''
+   %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+   
 [credential]
 	helper = osxkeychain
+	
 [color]
   	ui = auto
+	
 [color "branch"]
   	current = yellow reverse
   	local = yellow
   	remote = green
+	
 [color "diff"]
   	meta = yellow bold
   	frag = magenta bold
   	old = red bold
   	new = green bold
+	
 [color "status"]
   	added = yellow
   	changed = green
