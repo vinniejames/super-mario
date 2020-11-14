@@ -17,6 +17,10 @@ Super new Mac setup scripts
 - **File Sharing >** Off
 - **Users & Groups > Login Items >** Flux
 
+### Don't Phone Home
+
+[`$ echo 127.0.0.1 ocsp.apple.com | sudo tee -a /etc/hosts`](https://sneak.berlin/20201112/your-computer-isnt-yours/)
+
 ### Show Library folder
 
 ```$
